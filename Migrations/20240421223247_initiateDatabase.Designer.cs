@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LuftbornCodeTest.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240421195824_initiateDatabase")]
+    [Migration("20240421223247_initiateDatabase")]
     partial class initiateDatabase
     {
         /// <inheritdoc />
@@ -25,7 +25,7 @@ namespace LuftbornCodeTest.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Domains.TodoListTask", b =>
+            modelBuilder.Entity("LuftbornCodeTest.TodoListTask", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -60,34 +60,34 @@ namespace LuftbornCodeTest.Migrations
                         new
                         {
                             Id = 1,
-                            CreationDate = new DateTime(2024, 4, 21, 21, 58, 23, 223, DateTimeKind.Local).AddTicks(5020),
-                            Deadline = new DateOnly(2024, 4, 23),
+                            CreationDate = new DateTime(2024, 4, 22, 0, 32, 46, 772, DateTimeKind.Local).AddTicks(599),
+                            Deadline = new DateOnly(2024, 4, 24),
                             Discription = "Finish this ASP.NET Core migration",
-                            Status = 1
+                            Status = 0
                         },
                         new
                         {
                             Id = 2,
-                            CreationDate = new DateTime(2024, 4, 21, 21, 58, 23, 223, DateTimeKind.Local).AddTicks(5087),
-                            Deadline = new DateOnly(2024, 4, 22),
+                            CreationDate = new DateTime(2024, 4, 22, 0, 32, 46, 772, DateTimeKind.Local).AddTicks(651),
+                            Deadline = new DateOnly(2024, 4, 23),
                             Discription = "Groceries shopping",
-                            Status = 0
-                        },
-                        new
-                        {
-                            Id = 3,
-                            CreationDate = new DateTime(2024, 4, 21, 21, 58, 23, 223, DateTimeKind.Local).AddTicks(5093),
-                            Deadline = new DateOnly(2024, 4, 21),
-                            Discription = "Review code for pull request",
                             Status = 1
                         },
                         new
                         {
-                            Id = 4,
-                            CreationDate = new DateTime(2024, 4, 21, 21, 58, 23, 223, DateTimeKind.Local).AddTicks(5098),
-                            Deadline = new DateOnly(2024, 4, 24),
-                            Discription = "Team meeting",
+                            Id = 3,
+                            CreationDate = new DateTime(2024, 4, 22, 0, 32, 46, 772, DateTimeKind.Local).AddTicks(656),
+                            Deadline = new DateOnly(2024, 4, 22),
+                            Discription = "Review code for pull request",
                             Status = 0
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreationDate = new DateTime(2024, 4, 22, 0, 32, 46, 772, DateTimeKind.Local).AddTicks(659),
+                            Deadline = new DateOnly(2024, 4, 25),
+                            Discription = "Team meeting",
+                            Status = 1
                         });
                 });
 #pragma warning restore 612, 618

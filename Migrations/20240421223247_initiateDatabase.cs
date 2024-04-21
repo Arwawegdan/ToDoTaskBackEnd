@@ -36,10 +36,10 @@ namespace LuftbornCodeTest.Migrations
                 columns: new[] { "Id", "CreationDate", "Deadline", "Discription", "ModificationDate", "Status", "UserId" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2024, 4, 21, 21, 58, 23, 223, DateTimeKind.Local).AddTicks(5020), new DateOnly(2024, 4, 23), "Finish this ASP.NET Core migration", null, 1, null },
-                    { 2, new DateTime(2024, 4, 21, 21, 58, 23, 223, DateTimeKind.Local).AddTicks(5087), new DateOnly(2024, 4, 22), "Groceries shopping", null, 0, null },
-                    { 3, new DateTime(2024, 4, 21, 21, 58, 23, 223, DateTimeKind.Local).AddTicks(5093), new DateOnly(2024, 4, 21), "Review code for pull request", null, 1, null },
-                    { 4, new DateTime(2024, 4, 21, 21, 58, 23, 223, DateTimeKind.Local).AddTicks(5098), new DateOnly(2024, 4, 24), "Team meeting", null, 0, null }
+                    { 1, new DateTime(2024, 4, 22, 0, 32, 46, 772, DateTimeKind.Local).AddTicks(599), new DateOnly(2024, 4, 24), "Finish this ASP.NET Core migration", null, 0, null },
+                    { 2, new DateTime(2024, 4, 22, 0, 32, 46, 772, DateTimeKind.Local).AddTicks(651), new DateOnly(2024, 4, 23), "Groceries shopping", null, 1, null },
+                    { 3, new DateTime(2024, 4, 22, 0, 32, 46, 772, DateTimeKind.Local).AddTicks(656), new DateOnly(2024, 4, 22), "Review code for pull request", null, 0, null },
+                    { 4, new DateTime(2024, 4, 22, 0, 32, 46, 772, DateTimeKind.Local).AddTicks(659), new DateOnly(2024, 4, 25), "Team meeting", null, 1, null }
                 });
         }
 
